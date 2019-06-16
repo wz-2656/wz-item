@@ -1,0 +1,68 @@
+*{margin:0;padding:0;}
+.my_header,.my_footer{width:100%;}
+.my_header{height:110px;margin-bottom:-3px;}
+.user_login{
+	width:100%;height:800px;
+	background:url("../img/login.jpg") no-repeat;
+	background-size:cover;
+}
+.my_login{
+	width:350px;height:400px;
+	background-color:#fff;
+	float:right;
+	margin-top:200px;
+	margin-right:200px;
+}
+.my_login>h3{margin:45px 20px 10px 20px;}
+.user_name,.user_pwd{
+	width:300px;height:40px;
+	border:1px solid #ccc;
+	margin:20px;
+	position:relative;
+}
+.user_name>div,.user_pwd>div{font-size:12px;}
+.vali_info{
+	font-size:12px;
+	display:none;
+}
+.vali_fail{
+	font-size:12px;
+	color:#f00;
+	border:1px solid #f00;
+}
+.user_name>input,.user_pwd>input,.login_btn{
+	border:0;outline:0;
+}
+.user_name>input,.user_pwd>input{
+	width:262px;height:40px;
+	position:absolute;
+	top:0px;
+	left:38px;
+	background-color:#f5f5f5;
+}
+.login_btn{
+	width:300px;height:40px;
+	text-align:center;
+	margin:10px 20px;
+	background-color:#4b88ed;
+	font-size:16px;
+	color:#fff;
+}
+.login_bottom{
+	display:flex;
+	justify-content:flex-end;
+	margin-right:27px;
+	margin-top:10px;
+}
+.login_bottom>li{
+	list-style:none;
+	padding-left:5px;
+}
+.login_bottom>li>a{
+	color:#000;
+	font-size:14px;
+	text-decoration:none;
+}
+.login_bottom>li>a:hover{
+	text-decoration:underline;
+}

@@ -1,0 +1,236 @@
+*{margin:0;padding:0;}
+.my_header,.my_footer{width:100%;}
+.my_header{height:110px;}
+/*轮播图样式*/
+.container{
+	background-color:#f5f5f5;
+	margin-top:-3px;
+}
+
+.m_top .m_top_nav{
+	width:992px;
+	display:flex;
+	margin:0 auto;
+}
+/*热门推荐样式*/
+.index{
+	box-sizing:border-box;
+	width:992px;
+	margin:0 auto;
+	font-size:12px;
+	background-color:#fff;
+	border:1px solid #ccc;
+	display:flex;
+}
+.my_index{width:730px;border-right:1px solid #ccc;}
+.index_top{width:730px;}
+.nav{height:20px;margin-bottom:10px;
+	padding-top:15px;
+}
+.nav ul li,.nav h2,.nav p{float:left;}
+.nav p{width:20px;height:20px;
+	background: url("../img/index.png") no-repeat -232px -160px;
+	margin-left:30px;
+}
+.nav h2{margin-right:20px;}
+.nav ul{list-style:none;}
+.nav ul li,.nva a{
+	color:#666;	line-height:20px;
+}
+.nav-item + .nav-item::before{
+	content:"|";
+	padding-left:10px;
+	padding-right:10px;
+}
+hr{width:690px;height:2px;margin-left:20px;
+	background-color:#f00;border:0;
+	margin-bottom:20px;
+}
+.index_vip{
+	display:flex;
+	justify-content:space-around;
+	list-style:none;
+}
+.index_vip>li>div{
+	width:140px;height:200px;
+	font-size:16px;
+	margin-bottom:20px;
+}
+.index_vip>li>div>img:hover{
+	transform:scale(1.1);
+}
+.index_vip>li>div>a{
+	text-decoration:none;
+	color:#000;
+}
+.index_vip>li>div>a:hover{
+	text-decoration:underline;
+}
+.index_vip>li>div>p{
+	width:30px;height:18px;
+	background:url("../img/iconall.png") 10px -18px;
+	display:inline-block;
+}
+.list{
+	width:690px;height:470px;
+	margin:0 auto;
+	margin-bottom:30px;
+	border:1px solid #ccc;
+	display:flex;
+	justify-content:space-around;
+}
+.music_list{
+	width:230px;
+	border-right:1px solid #ccc;
+	background-color:#f4f4f4;
+}
+.music_list_title{
+	display:flex;
+	padding:20px;
+}
+.music_list_title>h3{
+	padding:10px;
+}
+.music_list>ul>li{
+	list-style-type:none;
+	padding-left:20px;
+}
+.music_list>p>a,.music_list>ul>li>a{
+	text-decoration:none;
+	color:#000;
+	font:14px "华文新魏";
+	line-height:32px;
+}
+
+.music_list>p{
+	padding-left:110px;
+	background-color:#e8e8e8;
+}
+.music_list>ul>li>span{
+	font:20px "华文行楷";
+}
+.music_list>ul>li:first-child span,.music_list>ul>li:nth-child(2) span,.music_list>ul>li:nth-child(3) span{
+	color:#f00;
+}
+.music_list>ul>li>a:hover{
+	text-decoration:underline;
+}
+.music_list>p>a:hover{
+	text-decoration:underline;
+}
+.music_list>ul>li:nth-child(odd){background-color:#e8e8e8}
+/*新碟上架样式*/
+.index_CD{
+	display:flex;
+	justify-content:space-around;
+}
+.index_CD>li{
+	list-style:none;
+}
+.my_music{
+	width:100px;height:150px;
+	position:relative;
+	overflow:hidden;
+}
+.my_music>a{
+	display:block;
+	text-decoration:none;
+	color:#000;
+	padding:3px;
+}
+.my_music>a:hover{
+	text-decoration:underline;
+}
+.my_index_CD{
+	width:30px;height:100px;
+	position:absolute;
+	top:0px;left:-55px;
+	background-color:#fff;
+	opacity:0.5; 
+	transform:skew(-25deg);
+}
+.index_CD>li:hover .my_index_CD{
+	left:130px;
+	transition:all 0.2s linear;
+}
+/*侧边栏样式*/
+.user_login{
+	box-sizing:border-box;
+	width:260px;height:125px;
+	background-color:#efefef;
+	border-right:1px solid #ccc;
+	border-bottom:1px solid #ccc; 
+}
+.user_login>p{
+	line-height:20px;
+	padding:20px;
+}
+.user_login>a{
+	width:100px;line-height:30px;
+	background-color:#d11016;
+	display:block;
+	border:1px solid #d11016;
+	border-radius:0.25rem;
+	text-decoration:none;
+	color:#fff;
+	margin:0 auto;
+	text-align:center;
+}	
+.sidbar{width:260px;}
+.singer{
+	padding:10px 20px;
+	margin-top:10px;
+	display:flex;
+	justify-content:space-between;
+}
+.singer>a{text-decoration:none;color:#666;}
+.singer>a:hover{
+	text-decoration:underline;
+}
+.hr1{width:220px;margin-left:20px;
+	background-color:#bbb;}
+.my_singer{
+	display:flex;
+	background-color:#fafafa;
+	margin:20px;
+}
+.my_singer_item{
+	width:160px;height:62px;
+}
+.my_singer_item>h3{
+	padding:10px;
+}
+.my_singer_item>p{padding-left:10px;}
+.my_singer_item:hover{
+	background-color:#f2f2f2;
+}
+.musicians>a{
+	width:220px;line-height:30px;
+	background-color:#efefef;
+	display:block;
+	border:1px solid #ccc;
+	border-radius:0.25rem;
+	text-decoration:none;
+	color:#000;
+	margin:0 auto;
+	text-align:center;
+}
+.musicians>a:hover{
+	background-color:#FFF;
+}
+.my_anchor{
+	display:flex;
+	background-color:#fafafa;
+	margin:20px;
+}
+.my_anchor_item{
+	width:160px;height:41px;
+}
+.my_anchor_item>h3{
+	padding:3px;
+	padding-left:10px;
+}
+.my_anchor_item>p{padding-left:10px;}
+.my_anchor_item:hover{
+	background-color:#f2f2f2;
+}
